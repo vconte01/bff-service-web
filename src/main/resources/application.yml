@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: bff-service-web
+
+#Server Port
+server:
+  port: 8083
+
+#Logging
+logging:
+  file:
+    name: 'c:\prova\bff-web.log'
+  logback:
+    rollingpolicy:
+      max-file-size: 10MB
+
+#Actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+info:
+  app:
+    version: '@version@'
+    name: '@description'
+    description: Esempio di Spring Boot Actuator
+  author:
+    website: https://linksmt.it
+    name: Vincenzo
+    surname: Conte
+
+
+
+
+
+
